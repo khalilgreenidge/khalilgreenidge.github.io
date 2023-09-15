@@ -1,0 +1,33 @@
+.intro {
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin: 0;
+    flex-direction: row;
+    
+    &.card {
+        padding: 1% 0;
+    }
+
+    .section > div {
+        min-height: 120vh;
+        width: 50vw;
+        float: left;
+    }
+
+    .section {
+        padding: 3% 0;
+
+        .graphics {
+            display: block;
+        }
+    }
+    
+    .wave {
+        display: inline;
+        background-color: pink;
+        width: 100%;
+        margin: 0;
+    }
+    
+}

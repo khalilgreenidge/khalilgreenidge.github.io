@@ -1,0 +1,40 @@
+.Menu {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    position: fixed;
+    top: 0;
+    height: 60px;
+    background-color: white;
+    font-size: 1.2em;
+
+    nav {
+        width: fit-content;
+        margin: 0 auto;
+        display: flex;
+    }
+
+    li {
+        list-style-type: none;
+        line-height: 60px;
+        height: inherit;
+        min-width: 150px;
+        display: block;
+        box-sizing: border-box;
+        text-align: center;
+
+        a {
+            width: inherit;
+            height: 100%;
+            box-sizing: border-box;
+            text-align: center;
+            display: block;
+            margin: 0;
+            color: black;
+
+            &:hover {
+                color: rgb(89, 89, 89);
+            }
+        }
+    }
+}
