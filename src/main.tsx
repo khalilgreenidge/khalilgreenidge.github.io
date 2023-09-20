@@ -6,7 +6,7 @@ import {
   createBrowserRouter,
   RouterProvider
 } from "react-router-dom";
-import routes from './routes/root.tsx';
+import routes from './routes/routes.tsx';
 
 const router = createBrowserRouter([
   {

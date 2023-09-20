@@ -1,0 +1,41 @@
+.Techstack {
+    margin: 0;
+    background-color: #3f3f3f;
+    width: 100%;
+    display: flex;
+
+    ul {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            min-width: 60px;
+            max-height: 70px;
+            margin: 0 20px;
+        }
+
+        #graphql, #python, #java {
+            height: 60px;
+        }
+
+        #kotlin {
+            height: 30px;
+        }
+
+        #mysql, #nodejs, #typescript, #javascript {
+            height: 50px;
+        }
+
+        #react {
+            will-change: filter;
+            transition: filter 300ms;
+        }
+
+        #react:hover {
+            filter: drop-shadow(0 0 3em #646cffaa);
+            filter: drop-shadow(0 0 3em #61dafbaa);
+        }
+    }
+}

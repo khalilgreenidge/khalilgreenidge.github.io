@@ -1,0 +1,44 @@
+.companies {
+    height: fit-content;
+    overflow-y: hidden;
+
+    li {
+        display: flex;
+        width: fit-content;
+        min-height: inherit;
+        padding: 0 10px;
+        margin: 0 50px;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+
+        #ebay {
+            height: 80px;
+            height: 100px;
+            width: 200px;
+        }
+
+        #sonymusic {
+            height: 90px;
+        }
+        
+        #theorchard {
+            height: 100px;
+            width: 270px;
+        }
+
+        #bb-gov {
+            height: 100px;
+            width: 120px;
+        }
+
+        #jobhunters {
+            height: 70px;
+            width: 300px;
+            margin: 15px 0;
+        }
+    }
+    
+}

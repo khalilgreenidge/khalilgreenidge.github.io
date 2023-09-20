@@ -1,3 +1,5 @@
+import Companies from "../components/companies/companies"
+
 const routes = [
     {
         path: "about",
@@ -10,6 +12,10 @@ const routes = [
     {
         path: "blog",
         element: "#"
+    },
+    {
+        path: "companies",
+        element: <Companies />,
     },
     {
         path: "contact",
