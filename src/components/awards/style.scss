@@ -1,7 +1,14 @@
 .awards {
-    min-height: 30vh;
+    height: 100vh;
     width: 100%;
     background-color: #2b2b2b;
+    padding: 1px 0;
+
+    &-container { 
+        display: flex;
+        padding: 0 1%;
+    }
+    
     
     ul {
         list-style: none;
@@ -10,6 +17,7 @@
         display: flex;
         flex-direction: column;
         padding: 0;
+        row-gap: 10px;
 
         li {
             min-width: 300px;
@@ -17,13 +25,31 @@
             height: fit-content;
             flex-direction: row;
             line-height: 80px;
+            display: flex;
+            animation: animate-in linear forwards, animate-out linear forwards;
+            animation-timeline: view();
+            animation-range: entry, exit;
 
             span,div {
                 line-height: 80px;
                 height: inherit;
-                margin-left: 40px;
+                margin-left: 15px;
                 font-size: 1.2em;
             }
+
+            img {
+                max-height: 100px;
+            }
+        }
+
+        @keyframes animate-in {
+            0% { opacity: 0; transform: translateY(100%); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+        
+        @keyframes animate-out {
+            0% { opacity: 1; transform: translateY(0); }
+            100% { opacity: 0; transform: translateY(-100%); }
         }
 
         #birms {
@@ -39,8 +65,19 @@
             height: 80px
         }
 
+        #notts-council {
+            height: 80px
+        }
+
         #bb-gov {
             height: 100px;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            #notts {
+                content: url("/src/assets/notts.jpeg");
+                height: 90px;
+            }
         }
 
     }

@@ -1,17 +1,17 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './components/app/App.tsx'
 import './index.scss'
-import {
-  createBrowserRouter,
-  RouterProvider
-} from "react-router-dom";
+import {createBrowserRouter, RouterProvider} from "react-router-dom";
 import routes from './routes/routes.tsx';
+import LogRocket from 'logrocket';
+import Root from './components/root/root.tsx';
+
+LogRocket.init('zobopl/portfolio');
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+    element: <Root />,
     children: routes
   },
 ]);

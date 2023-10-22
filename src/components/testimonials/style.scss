@@ -1,0 +1,79 @@
+.Testimonials {
+    padding: 3% 0;
+    $slide-width: 750px;
+    height: 100vh;
+
+    .slide-show {
+        width: $slide-width;
+        margin: 50px auto;
+        overflow: hidden;
+        display: flex;
+        z-index: 9;
+
+        ul {
+            margin: 0;
+            width: 200%;
+            display: flex;
+            padding: 0;
+            height: inherit;
+            //animation: slideshow 5s linear infinite;
+            z-index: -1;
+        }
+
+        .slide{
+            width: $slide-width;
+            display: inline-block; 
+            z-index: -91;
+            height: inherit;
+            animation: fade 1.5s;
+            
+            img {
+                border-radius: 50%;
+                height: 200px;
+                margin: 0 auto;
+                display: block;
+            }
+
+            .name{
+                margin-bottom: 0;
+            }
+
+            .title { margin-top: 0;}
+
+            p{
+                font-style: italic;
+                font-weight: 800;
+                font-size: 20px;
+            }
+
+            p:before, p:after{
+                content: "\"";
+                font-size: x-large;
+                font-style: italic;
+            }
+        }
+
+        
+          
+        @keyframes fade {
+            from {opacity: .4}
+            to {opacity: 1}
+        }
+    }
+
+    .dot {
+        cursor: pointer;
+        content: '\.';
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+
+    .active, .dot:hover {
+        background-color: #717171;
+    }
+}

@@ -553,6 +553,11 @@
     "@typescript-eslint/types" "6.7.0"
     eslint-visitor-keys "^3.4.1"
 
+"@vitejs/plugin-basic-ssl@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@vitejs/plugin-basic-ssl/-/plugin-basic-ssl-1.0.1.tgz#48c46eab21e0730921986ce742563ae83fe7fe34"
+  integrity sha512-pcub+YbFtFhaGRTo1832FQHQSHvMrlb43974e2eS8EKleR3p1cDdkJFPci1UhwkEf1J9Bz+wKBSzqpKp7nNj2A==
+
 "@vitejs/plugin-react@^4.0.3":
   version "4.0.4"
   resolved "https://registry.yarnpkg.com/@vitejs/plugin-react/-/plugin-react-4.0.4.tgz#31c3f779dc534e045c4b134e7cf7b150af0a7646"
@@ -1200,6 +1205,11 @@ lodash.merge@^4.6.2:
   version "4.6.2"
   resolved "https://registry.yarnpkg.com/lodash.merge/-/lodash.merge-4.6.2.tgz#558aa53b43b661e1925a0afdfa36a9a1085fe57a"
   integrity sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ==
+
+logrocket@^5.0.1:
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/logrocket/-/logrocket-5.0.1.tgz#0a1c9fe39e6e39a401b34003b0dba37ffcd5640e"
+  integrity sha512-czWLcDkBJ+V/wooBQtPW76RAS2rszjsfkQumqPO3zPCQka8dcjsuGJxJhcxAuMZf5WDZd/zkvfDZCBJ6zeCQYg==
 
 loose-envify@^1.1.0:
   version "1.4.0"

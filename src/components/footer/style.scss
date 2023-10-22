@@ -1,0 +1,57 @@
+.Footer {
+    background-color: #4d4d4d;
+    padding: 1%;
+    
+    &-container {display: flex;}
+    
+    &-col {
+        display: flex;
+        width: 400px;
+        //border: solid 1px saddlebrown;
+        min-height: 400px;
+        display: flex;
+        flex-direction: column;
+        margin: 0 50px;
+        
+        ul {
+            list-style-type: none;
+            margin: 0;
+
+            li {
+                text-align: left;
+            }
+        }
+
+        img, svg {
+            height: 30px;
+        }
+    }
+
+    &-col.pages {
+        ul {
+            width: 40%;
+            margin: 0 auto; 
+        }
+        
+    }
+    
+    &-col.connect {
+        width: 400px;
+    }
+
+    &-col.contact {
+        .button {
+            width: 90px;
+            margin: 40px auto;
+        }
+    }
+
+    hr {
+        height: 1px;
+        background-color: white;
+        width: 100%;
+        margin: 50px 0;
+    }
+
+    &-copyright {font-size: 18px;}
+}

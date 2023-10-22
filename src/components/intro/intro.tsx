@@ -2,12 +2,12 @@ import Ticker, {Image} from '../ticker/ticker'
 import './style.scss'
 
 const Intro = () => {
-    return <div className="intro">
+    return <section className="intro">
         <div className='section'>
             {bio()}
             {graphics()} 
         </div>
-    </div>
+    </section>
 }
 
 const socials: Image[] = [
@@ -29,7 +29,7 @@ const socials: Image[] = [
 ]
 
 const bio = () => {
-    return <div className="bio">
+    return <div className="bio slideLeft">
         <h1>Hi!</h1>
         <h1> I am Khalil Greenidge</h1>
         <h2>Full Stack Software Engineer</h2>

@@ -1,7 +1,12 @@
-import './styles.scss'
 import Ticker, { Image } from '../ticker/ticker';
+import { useState, useRef } from 'react';
+import './styles.scss'
 
 const images: Image[] = [
+    {
+        id: "jobhunters",
+        src: "src/assets/jobhunters.png"
+    },
     {
         id: "ebay",
         src: "src/assets/ebay.png"
@@ -16,19 +21,19 @@ const images: Image[] = [
     },
     {
         id: "bb-gov",
-        src: "src/assets/coat_of_arms.png"
+        src: "src/assets/gov-bb.png"
     },
-    {
-        id: "jobhunters",
-        src: "src/assets/jobhunters.png"
-    }
 ]
 
 const Companies = () => {
-    return <div className="companies">
+    const [isSticky, setIsSticky] = useState(false);
+    const [scrollPosition, setScrollPosition] = useState(0);
+    const divRef = useRef(null);
+
+    return <section className="companies">
         <h1>Companies</h1>
         <Ticker images={images}/>
-    </div>;
+    </section>;
 }
 
 export default Companies;

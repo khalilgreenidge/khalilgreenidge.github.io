@@ -13,10 +13,10 @@ interface Props {
 }
 
 const Ticker: FC<Props> = ({images, className}) => {
-    const items = images.map(image => {
+    const items = images.map( (image, index) => {
         const img = <img id={image.id} src={image.src} />
         const listItem = image.link ? <a href={image.link} target="_blank">{img}</a> : img
-        return <li>{listItem}</li>
+        return <li key={index}>{listItem}</li>
     });
     const newClassName = className ? "ticker "+ className : "ticker"
     return (<ul className={newClassName}>{items}</ul>);

@@ -1,9 +1,16 @@
 import Companies from "../components/companies/companies"
+import About from "../components/about/about"
+import App from "../components/app/app"
+import Contact from "../components/contact/contact"
 
 const routes = [
     {
+        path: "/",
+        element: <App/>,
+    },
+    {
         path: "about",
-        element: "#"
+        element: <About />
     },
     {
         path: "awards",
@@ -19,7 +26,7 @@ const routes = [
     },
     {
         path: "contact",
-        element: "#"
+        element: <Contact />
     },
     {
         path: "projects",

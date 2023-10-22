@@ -1,13 +1,23 @@
 .companies {
     height: fit-content;
     overflow-y: hidden;
+    	/* Stretch it out, so that we create room for the horizontal scroll animation */
+	overflow: visible; /* To make position sticky work … */
+   /* position: -webkit-sticky;  Safari 
+    position: sticky;
+    top: 0;*/
+
+    ul {
+        animation: scrollSlideLeft auto linear;
+        //animation-play-state: paused;
+        animation-timeline: scroll();
+    }
 
     li {
         display: flex;
         width: fit-content;
         min-height: inherit;
-        padding: 0 10px;
-        margin: 0 50px;
+        margin: 0 30px;
 
         img {
             width: 100%;
@@ -15,9 +25,7 @@
         }
 
         #ebay {
-            height: 80px;
             height: 100px;
-            width: 200px;
         }
 
         #sonymusic {
@@ -31,7 +39,7 @@
 
         #bb-gov {
             height: 100px;
-            width: 120px;
+            width: 280px;
         }
 
         #jobhunters {
@@ -40,5 +48,19 @@
             margin: 15px 0;
         }
     }
+
+    @keyframes scrollSlideLeft {
+        from {margin-left: 10%;}
+        to {margin-left: -60%;}
+    }
     
+    @media (prefers-color-scheme: dark) {
+        #sonymusic {
+            content: url("/src/assets/sonymusic-white.png");
+        }
+
+        #bb-gov {
+            content: url("src/assets/gov-bb-white.png");
+        }
+    }
 }

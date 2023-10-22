@@ -1,0 +1,68 @@
+$timeline-height: 50px;
+
+.about {
+    background-color: rgb(255, 255, 255);
+    color: #585858;
+
+    .intro {
+        height: 100vh;
+        display: flex;
+
+        .bio {
+            margin: 0;
+            padding-top: 10%;
+        }
+
+        .bio.slideright {
+            span, h1, p { animation: slideRight ease-in-out 0.5s; }
+            h1 { animation: slideRight ease-in-out 0.75s; }
+            p { animation: slideRight ease-in-out 1s; }
+        }
+        
+        .graphics {
+            
+            img {
+
+            }
+        }
+    }
+
+    .mystory {
+        height: fit-content;
+        color: #c4c4c4;
+    }
+
+    article {
+        color: #585858;
+        padding: 2%;
+        display: flex;
+        width: 100vw;
+        gap: 100px;
+
+        p {
+            width: 50vw;
+            margin-top: 100px;
+            text-align: justify;
+            display: flex;
+        }
+
+        #puzzle {
+            height: 500px;
+            display: flex;
+        }
+    }
+
+
+    @keyframes slideRight {
+        0%, 75%{
+            position: relative;
+            left: 100%;
+        }
+        
+        100% {
+            position: relative;
+            left: 0;
+        }
+    }
+    
+}
