@@ -1,6 +1,31 @@
 .projects {
     min-height: 40vw;
+    height: fit-content;
     width: 100%;
     background-color: #474747;
-    padding: 1% 0;
+    padding: 1% 0 10%;
+
+    .Deck {
+        flex-direction: row;
+        width: fit-content;
+        column-gap: 20px;
+        row-gap: 40px;
+        margin: 4% auto;
+        padding: 0;
+    }
+
+    @media (max-width: 1174px) {
+        .Deck {
+            max-width: 800px;
+            margin: 0 auto;
+            column-gap: 40px;
+        }
+    }
+
+    @media (max-width: 780px) {
+        .Deck {
+            width: 350px;
+            margin: 0 auto;
+        }
+    }
 }

@@ -32,9 +32,12 @@ const About: FC = () => {
                 <p>
                     As time progressed, this passion for Software Engineering increased. Previously, I was a C/D student who often had poor grades at the bottom of the class.
                     Everything changed as I focused my energy on Computer Science. In college, my passion paid its dividends as I received a 3.98 GPA out of 4.0. I was the top student in 
-                    Computer Science and was awarded Barbados' Prestigious National Exhibition Scholarship. Later on, my
+                    Computer Science and was awarded Barbados' Prestigious National Exhibition Scholarship. Later on, I began to be selected for numerous other scholarships and awards such as the 
+                    <a href="https://www.errolandnitabarroweducationaltrust.org/purpose-awardees/#cc-m-header-8030595762"> Errol & Nita Barrow Education Trust Award</a>, and 
+                    <a href='https://blackheartfoundation.org/scholars-2020-2021/'> The Black Heart Foundation Scholarship</a>. In 2020, when I completed my Master's in Computer Science, I received a 
+                    a Distinction. As I began to enter the world of work, my expertise was recognised throughout my internship at eBay, where I led a team of individuals for eBay's Global Hackweek project, and was awarded by the company's executive leadership team.
                 </p>
-                <img src="src/assets/puzzle.webp" id="puzzle" />
+                <img src="src/assets/grad.jpeg" id="puzzle" />
             </article>
         </section>
     

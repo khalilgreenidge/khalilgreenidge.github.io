@@ -1,6 +1,6 @@
 import { FC } from "react";
 import "./style.scss"
-import Contact from "../contact/contact";
+import { renderMeeting } from "../contact/contact";
 
 const CLASSNAME = "Footer"
 
@@ -47,6 +47,7 @@ const Footer: FC = () => {
             <h1>Contact me</h1>
             <span>📧 hello@khalilgreenidge.com</span>
             <a className="button" href="/contact">Contact</a>
+            {renderMeeting()}
         </section>
 
     return <footer className={CLASSNAME}>
