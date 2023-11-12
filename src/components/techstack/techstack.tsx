@@ -46,11 +46,15 @@ const images: Image[] = [
     {
         id: "mongo",
         src: "src/assets/mongo.png"
+    },
+    {
+        id: "docker",
+        src: "src/assets/docker.svg"
     }
 ]
 
 const TechStack: FC = () => {
-    return <div className="Techstack"><Ticker images={images} className="techstack" /></div>
+    return <section className="Techstack"><Ticker images={images} className="techstack" /></section>
 }
 
 export default TechStack

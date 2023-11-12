@@ -1,4 +1,4 @@
-import { FC, RefObject } from "react";
+import { FC } from "react";
 import './style.scss'
 import Deck from "../deck/deck";
 import { Props as CardType} from "../deck/card/card";

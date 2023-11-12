@@ -1,7 +1,12 @@
 .Testimonials {
     padding: 3% 0;
     $slide-width: 750px;
-    height: 100vh;
+    min-height: 50vh;
+    height: fit-content;
+    position: sticky;
+    top: 60px;
+    width: 100%;
+    background-color: #414141;
 
     .slide-show {
         width: $slide-width;

@@ -1,16 +1,10 @@
 .companies {
     height: fit-content;
-    overflow-y: hidden;
-    	/* Stretch it out, so that we create room for the horizontal scroll animation */
-	overflow: visible; /* To make position sticky work … */
-   /* position: -webkit-sticky;  Safari 
-    position: sticky;
-    top: 0;*/
+    margin: 4% 0;
 
-    ul {
-        animation: scrollSlideLeft auto linear;
-        //animation-play-state: paused;
-        animation-timeline: scroll();
+    .ticker {
+        margin: auto;
+        width: fit-content;
     }
 
     li {
@@ -26,10 +20,12 @@
 
         #ebay {
             height: 100px;
+            width: 160px;
         }
 
         #sonymusic {
             height: 90px;
+            width: 422px;
         }
         
         #theorchard {
@@ -54,6 +50,14 @@
         to {margin-left: -60%;}
     }
     
+    @keyframes move {
+        to {
+            /* Move horizontally so that right edge is aligned against the viewport */
+            transform: translateX(calc(-100% + 100vw));
+		    left: 0px;
+        }
+    }    
+
     @media (prefers-color-scheme: dark) {
         #sonymusic {
             content: url("/src/assets/sonymusic-white.png");
@@ -63,4 +67,46 @@
             content: url("src/assets/gov-bb-white.png");
         }
     }
+    
+    @media(max-width: 1810px){
+        .ticker {
+            padding: 0;
+        }
+    }
+
+    @media(max-width: 1750px){
+        
+        height: 30vh;
+        overflow: visible; /* To make position sticky work … */
+
+        view-timeline-name: --section-pin-tl;
+        view-timeline-axis: block;
+    
+        .pin-wrap-sticky {
+            /* Stick to Top */
+            height: fit-content;
+            width: 100vw;
+            position: -webkit-sticky;
+            position: sticky;
+            top: 60px;
+            overflow-x: hidden;
+        }
+
+        .ticker {
+            margin: initial;
+            height: fit-content;
+            width: 150vmax;
+            transform: translateX(10%);
+
+            /* Hook animation */
+            will-change: transform;
+            animation: linear move forwards;
+
+            /* Link animation to view-timeline */
+            animation-timeline: --section-pin-tl;
+            animation-range: contain 0% contain 100%;
+        }
+    
+    }
+
 }

@@ -19,7 +19,7 @@ const Ticker: FC<Props> = ({images, className}) => {
         return <li key={index}>{listItem}</li>
     });
     const newClassName = className ? "ticker "+ className : "ticker"
-    return (<ul className={newClassName}>{items}</ul>);
+    return (<ul className={newClassName}>{items}</ul>)
 }
 
 export default Ticker

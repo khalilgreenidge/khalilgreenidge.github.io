@@ -1,5 +1,4 @@
-import Ticker, { Image } from '../ticker/ticker';
-import { useState, useRef } from 'react';
+import Ticker, { Image } from '../ticker/ticker'
 import './styles.scss'
 
 const images: Image[] = [
@@ -25,15 +24,16 @@ const images: Image[] = [
     },
 ]
 
-const Companies = () => {
-    const [isSticky, setIsSticky] = useState(false);
-    const [scrollPosition, setScrollPosition] = useState(0);
-    const divRef = useRef(null);
+const CLASSNAME = "companies"
 
-    return <section className="companies">
-        <h1>Companies</h1>
-        <Ticker images={images}/>
-    </section>;
+const Companies = () => {
+
+    return <section className={CLASSNAME}>
+        <div className="pin-wrap-sticky">
+            <h1>Companies</h1>
+            <Ticker images={images} />
+        </div>
+    </section>
 }
 
-export default Companies;
+export default Companies
