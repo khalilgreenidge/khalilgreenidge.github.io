@@ -4,39 +4,21 @@
     margin: 0;
     min-height: 80vh;
     flex-direction: row;
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+    }
     
-    .section > div {
+    .container > div {
         width: 50vw;
         float: left;
     }
 
-    .section {
+    .container {
         display: flex;
         padding: 0;
         height: inherit;
-    }
-
-    .graphics {
-        display: block;
-
-        img {
-            height: 100%;
-            float: right;
-        }
-    }
-
-    .socials {
-        margin: 60px 0;
-        min-height: 20px;
-        padding: 0;
-        animation: slideLeft 0.5s ease-in-out;
-
-        img{
-            max-height: 30px;
-            margin: 0 10px;
-        }
-
-        
     }
 
     .bio {
@@ -57,14 +39,37 @@
         p {
             width: 80%;
             font-size: 1.2em;
-        }
-
-        
+        }        
     }
 
     .bio.slideLeft {
         > *:not(.socials) {
             animation: slideLeft ease-in-out 1s;
+        }
+    }
+
+    .graphics {
+        display: block;
+
+
+        img {
+            min-height: 630px;
+            height: auto;
+            min-width: 430px;
+            width: 60%;
+            float: right;
+        }
+    }
+
+    .socials {
+        margin: 60px 0;
+        min-height: 20px;
+        padding: 0;
+        animation: slideLeft 0.5s ease-in-out;
+
+        img{
+            max-height: 30px;
+            margin: 0 10px;
         }
     }
 
@@ -84,5 +89,21 @@
         }
     }
     
+}
+
+@media (max-width: 1250px) {
+    .intro {
+        .container > div {
+            width: 100%;
+        }
+
+        .graphics {
+            img {
+                margin: auto;
+                float: none;
+                width: 50%;
+            }
+        }
+    }
 }
 

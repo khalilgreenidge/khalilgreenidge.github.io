@@ -3,13 +3,18 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://khalilgreenidge.github.io/portfolio",
   "scripts": {
     "start": "vite --open",
     "build": "tsc && vite build",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
   "dependencies": {
+    "@fortawesome/free-solid-svg-icons": "^6.4.2",
+    "@fortawesome/react-fontawesome": "^0.2.0",
     "logrocket": "^5.0.1",
     "react": "^18.2.0",
     "react-calendly": "^4.3.0",
@@ -27,8 +32,12 @@
     "eslint": "^8.45.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.3",
+    "gh-pages": "^6.1.0",
     "sass": "^1.67.0",
     "typescript": "^5.0.2",
     "vite": "^4.4.5"
+  },
+  "peerDependencies": {
+    "@fortawesome/fontawesome-svg-core": "~6"
   }
 }

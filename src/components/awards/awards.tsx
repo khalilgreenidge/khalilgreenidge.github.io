@@ -3,7 +3,7 @@ import "./style.scss"
 
 
 const Awards: FC = () => {
-    return <section className="awards">
+    return <section className="awards" id="awards">
         <h1>Awards</h1>
 
         <div className="awards-container">

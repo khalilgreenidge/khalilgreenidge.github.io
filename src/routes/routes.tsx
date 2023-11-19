@@ -21,16 +21,12 @@ const routes = [
         element: "#"
     },
     {
-        path: "companies",
-        element: <Companies />,
-    },
-    {
         path: "contact",
         element: <Contact />
     },
     {
         path: "projects",
-        element: "#"
+        element: <App/>
     },
 ]
 export default routes
