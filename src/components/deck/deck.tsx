@@ -1,4 +1,4 @@
-import { ComponentType, FC, FunctionComponent, ReactElement, ReactNode } from "react";
+import { FC } from "react";
 import Card, {Props as CardProps} from "./card/card";
 import './style.scss'
 

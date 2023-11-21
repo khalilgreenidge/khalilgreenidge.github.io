@@ -64,8 +64,8 @@ const Testimonials = () => {
     
     const renderSlideNav = () => 
         <nav ref={navRef}>
-            <span className="dot active" onClick={e => setSlideIndex(0)}></span>
-            <span className="dot" onClick={e => setSlideIndex(1)}></span>
+            <span className="dot active" onClick={() => setSlideIndex(0)}></span>
+            <span className="dot" onClick={() => setSlideIndex(1)}></span>
         </nav>
 
     useEffect(() => {showSlides()}, [slideIndex])

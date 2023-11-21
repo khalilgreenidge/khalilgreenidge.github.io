@@ -1,5 +1,5 @@
 import './style.scss'
-import { useLocation, useParams } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
 import { PopupButton } from "react-calendly";
     
 

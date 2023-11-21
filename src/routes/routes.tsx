@@ -1,4 +1,3 @@
-import Companies from "../components/companies/companies"
 import About from "../components/about/about"
 import App from "../components/app/app"
 import Contact from "../components/contact/contact"
